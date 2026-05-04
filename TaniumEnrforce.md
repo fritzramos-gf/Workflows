@@ -47,8 +47,6 @@ flowchart TD
     class A,B,C,E,F,I,K,L,M,T gray
     class U green
 
----
-
 ## 1. Tanium Enforce Policy Deployment Workflow
 
 This workflow represents a complete **GitOps-driven policy deployment process** using Tanium Enforce, combining development practices with automated enforcement and compliance monitoring.
