@@ -5,7 +5,7 @@ Tanium Enforce Policy Workflow
 flowchart TD
     A[Step 1: Developer] --> B[Step 2: Feature Branch]
     B --> C[Step 3: Pull Request]
-    C --> D[Step 4: 🔍 AI Agent Code Review & Security Scan]
+    C --> D{Step 4: 🔍 AI Agent Code Review & Security Scan}
 
     D -->|Clean| E[Step 6: CI / Automated Tests]
     D -->|Issues Found| F[Step 5: Request Changes / Auto-Comment]
@@ -21,7 +21,7 @@ flowchart TD
     J --> K[Step 11: Target Computer Groups]
     K --> L[Step 12: Schedule Enforcement]
     L --> M[Step 13: Initial Enforcement]
-    M --> N[Step 14: Verify Policy Settings]
+    M --> N{Step 14: Verify Policy Settings}
     N --> O[Step 15: Verification Outcome]
 
     O -->|Failed/Incomplete| P[Step 16: Auto-Retry]
