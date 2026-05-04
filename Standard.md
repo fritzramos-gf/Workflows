@@ -17,8 +17,8 @@ flowchart TD
 
     H --> I[Step 9: GitOps Agent Detects Change]
     I --> J[Step 10: Deploy to Staging]
-    J --> K[Step 11: Staging T
-    ests]
+    J --> K{Step 11: Staging T
+    ests}
 
     K -->|Fail| L[Step 12: Rollback / Fix]
     L --> K
