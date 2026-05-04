@@ -1,10 +1,3 @@
-d‎
-+128
-Lines changed: 128 additions & 0 deletions
-
-
-Original file line number	Diff line number	Diff line change
-@@ -0,0 +1,128 @@
 ## 1. Tanium Enforce Policy Deployment Workflow
 This workflow represents a complete **GitOps-driven policy deployment process** using Tanium Enforce, combining development practices with automated enforcement and compliance monitoring.
 ### Step-by-Step Process:
