@@ -21,7 +21,7 @@ flowchart TD
     J --> K[Step 11: Target Computer Groups]
     K --> L[Step 12: Schedule Enforcement]
     L --> M[Step 13: Initial Enforcement]
-    M --> N[Step 14: Verify Policy Settings]
+    M --> N{Step 14: Verify Policy Settings}
     N --> O[Step 15: Verification Outcome]
 
     O -->|Failed/Incomplete| P[Step 16: Auto-Retry]
