@@ -1,7 +1,11 @@
+Tanium Enforce Policy Workflow
+
+
+
 flowchart TD
     A[Step 1: Developer] --> B[Step 2: Feature Branch]
     B --> C[Step 3: Pull Request]
-    C --> D{Step 4: 🔍 AI Agent Code Review & Security Scan}
+    C --> D[Step 4: 🔍 AI Agent Code Review & Security Scan]
 
     D -->|Clean| E[Step 6: CI / Automated Tests]
     D -->|Issues Found| F[Step 5: Request Changes / Auto-Comment]
@@ -17,7 +21,7 @@ flowchart TD
     J --> K[Step 11: Target Computer Groups]
     K --> L[Step 12: Schedule Enforcement]
     L --> M[Step 13: Initial Enforcement]
-    M --> N{Step 14: Verify Policy Settings}
+    M --> N[Step 14: Verify Policy Settings]
     N --> O[Step 15: Verification Outcome]
 
     O -->|Failed/Incomplete| P[Step 16: Auto-Retry]
@@ -36,7 +40,6 @@ flowchart TD
     classDef orange fill:#f57c00,stroke:#fff,color:#fff
     classDef red fill:#e53935,stroke:#fff,color:#fff
     classDef gray fill:#37474f,stroke:#90a4ae,color:#fff
-    classDef green fill:#2e7d32,stroke:#fff,color:#fff
 
     class D,G,J,N,O,Q,S blue
     class H orange
