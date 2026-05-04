@@ -1,6 +1,6 @@
 Standard Git Ops
 
-```mermaid
+
 
 flowchart TD
     A[Step 1: Developer] --> B[Step 2: Feature Branch]
@@ -37,4 +37,3 @@ flowchart TD
     class A,B,C,E,F,I,J,K,L,N gray
     class O green
 
-    ```
