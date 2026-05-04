@@ -1,7 +1,6 @@
 Standard Git Ops
 
-
-
+```mermaid
 flowchart TD
     A[Step 1: Developer] --> B[Step 2: Feature Branch]
     B --> C[Step 3: Pull Request]
