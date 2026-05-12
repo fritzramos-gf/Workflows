@@ -1,7 +1,7 @@
 Standard Git Ops
 
 ```mermaid
-flowchart TD
+flowchart LR
     A[Step 1: Developer] --> B[Step 2: Feature Branch]
     B --> C[Step 3: Pull Request]
     C --> D{Step 4: 🔍 AI Agent<br>Code Review & Security Scan}
