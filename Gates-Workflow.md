@@ -1,6 +1,4 @@
 ```mermaid
-
-```mermaid
 flowchart LR
     A[feature branch] --> B
     subgraph DEV
