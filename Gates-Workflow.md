@@ -10,6 +10,7 @@ flowchart LR
         \nRun workflow"]
 
     B ----> D
+    G ~~~ H["Deployment/DevOps\nPull Request\nReview Required"]
     subgraph STG
         D[deploy-stg]
     end
