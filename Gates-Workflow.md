@@ -3,12 +3,12 @@
 ```mermaid
 flowchart LR
     markdown["🌿 feature branch"]
-        fb_pr["Dev Pull Request\nReview Required"]
-    
+    newlines["🛠️ DEV  —  deploy-dev"]
+    markdown --> newlines
 
-    subgraph DEV["🛠️ DEV  —  deploy-dev"]
-        dev_q["Queue workflow\nRun workflow"]
-    end
+    
+     
+    
 
     subgraph STG["🧪 STG  —  deploy-stg"]
         stg_pr["Deployment/DevOps\nPull Request\nReview Required"]
