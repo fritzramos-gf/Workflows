@@ -4,6 +4,7 @@ flowchart LR
     subgraph DEV
         B[deploy-dev]
     end
+    A ~~~ B ["Dev\nPull Request\nReview Required"]
     B ----> C
     subgraph STG
         C[deploy-stg]
