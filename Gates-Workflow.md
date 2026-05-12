@@ -20,8 +20,9 @@ flowchart LR
     subgraph PROD
         E[main]
     end
+    I ~~~ J["Queue workflow\nApproval Required\nRun workflow"]
     E ---> F
-    I ~~~ J["Deployment/DevOps\nPull Request\nReview Required"] 
+    J ~~~ K["Deployment/DevOps\nPull Request\nReview Required"] 
     subgraph ROLLBACK
         F[Release]
     end
