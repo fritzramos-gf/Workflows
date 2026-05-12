@@ -15,8 +15,8 @@ flowchart LR
     subgraph STG
         D[deploy-stg]
     end
-    H ~~~ I["Queue workflow\nApproval Required\nRun workflow"]
     D ----> E
+    H ~~~ I["Queue workflow\nApproval Required\nRun workflow"]
     subgraph PROD
         E[main]
     end
