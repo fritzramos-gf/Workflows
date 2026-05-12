@@ -2,9 +2,8 @@
 
 ```mermaid
 flowchart TD
-    A["🌿 feature branch"]
-    B["🛠️ DEV  —  deploy-dev"]
-    A --> B   
+    A["🌿 feature branch"] -- > B["🛠️ DEV  —  deploy-dev"]
+        
     C["🧪 STG  —  deploy-stg"]      
     D["🚀 PROD  —  main"] 
     D["♻️ Rollback  —  Release"]
