@@ -2,9 +2,9 @@
 
 ```mermaid
 flowchart LR
-    subgraph FB["🌿 feature branch"]
+    markdown["🌿 feature branch"]
         fb_pr["Dev Pull Request\nReview Required"]
-    end
+    
 
     subgraph DEV["🛠️ DEV  —  deploy-dev"]
         dev_q["Queue workflow\nRun workflow"]
