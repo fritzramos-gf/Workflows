@@ -6,8 +6,8 @@ flowchart LR
     subgraph DEV
         B[deploy-dev]
     end
-    B ~~~ G["Queue workflow
-            \nRun workflow"]
+     G["Queue workflow
+        \nRun workflow"]
 
     B ----> D
     subgraph STG
