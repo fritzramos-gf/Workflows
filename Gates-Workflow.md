@@ -21,6 +21,7 @@ flowchart LR
         E[main]
     end
     E ----> F
+    J ~~~ K["Deployment/DevOps\nPull Request\nReview Required"]
     subgraph ROLLBACK
         F[Release]
     end
