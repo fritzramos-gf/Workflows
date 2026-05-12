@@ -20,7 +20,7 @@ flowchart LR
     subgraph PROD
         E[main]
     end
-    E ----> F
+    E ---> F
     I ~~~ J["Deployment/DevOps\nPull Request\nReview Required"] 
     subgraph ROLLBACK
         F[Release]
