@@ -6,21 +6,19 @@ flowchart LR
     subgraph DEV
         B[deploy-dev]
     end
-    A ~~~ B ["Dev\nPull Request\nReview Required"]
-    B ----> C
+    B ----> D
     subgraph STG
-        C[deploy-stg]
+        D[deploy-stg]
     end
-    
-    C ----> D
+    D ----> E
     subgraph PROD
-        D[main]
+        E[main]
+    end
+    E ----> F
+    subgraph ROLLBACK
+        F[Release]
     end
 
-    D ----> E
-    subgraph ROLLBACK
-         E[Release]
-    end
 
 
 
