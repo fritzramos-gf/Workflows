@@ -14,7 +14,10 @@ flowchart LR
         D[main]
     end
 
-    D ----> E[Release]
+    D ----> E
+    subgraph ROLLBACK
+         E[Release]
+    end
 
 
 
