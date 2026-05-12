@@ -1,0 +1,10 @@
+1.GitHub
+  1.Create the Repo
+  2.Create GitHub Actions
+  3.Create Claude.MD and Skills.MD
+2.AGC
+  1.Create the VM for Self-Hosted Runners
+3.Tanium
+  1.Service Account granted access to Enforce
+  2.API Key from Service Account
+  3.Import Baseline GPO
