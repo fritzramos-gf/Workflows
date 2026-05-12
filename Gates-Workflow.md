@@ -11,9 +11,11 @@ flowchart LR
 
     B ---> D
     G ~~~ H["Deployment/DevOps\nPull Request\nReview Required"]
+    H ~~~ D
     subgraph STG
         D[deploy-stg]
     end
+    H ~~~ I["Queue workflow\nApproval Required\nRun workflow"]
     D ----> E
     subgraph PROD
         E[main]
