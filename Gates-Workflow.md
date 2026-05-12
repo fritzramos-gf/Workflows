@@ -1,9 +1,7 @@
 ```mermaid
 
 flowchart LR
-    A[feature branch] -->
-      [DEV]
-    B[deploy-dev]       
+    A[feature branch] --> B[deploy-dev]       
 
     B --> C[deploy-stg]      
 
