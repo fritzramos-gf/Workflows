@@ -11,10 +11,7 @@ flowchart LR
     newlines["♻️ Rollback  —  Release"]
  
 
-    FB -->|"merge PR"| DEV
-    DEV -->|"merge PR"| STG
-    STG -->|"merge PR"| PROD
-    PROD -->|"tag release"| RB
+
 
     note["📁 Folder: Recommended to organize code for each\nitem into separate folders in the repository\nto maintain a clear structure."]
 
