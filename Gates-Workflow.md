@@ -9,7 +9,11 @@ flowchart LR
         C[deploy-stg]
     end
     
-    C ----> D[main] 
+    C ----> D
+    subgraph PROD
+        D[main]
+    end
+
     D ----> E[Release]
 
 
