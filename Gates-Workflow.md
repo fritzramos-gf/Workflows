@@ -4,13 +4,13 @@ flowchart LR
     subgraph DEV
         B[deploy-dev]
     end
-    B --> C
+    B ----> C
     subgraph STG
         C[deploy-stg]
     end
     
-    C --> D[main] 
-    D --> E[Release]
+    C ----> D[main] 
+    D ----> E[Release]
 
 
 
