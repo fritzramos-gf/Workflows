@@ -1,14 +1,13 @@
 
 
 ```mermaid
-flowchart LR
-    markdown["🌿 feature branch"]
-    newlines["🛠️ DEV  —  deploy-dev"]
-    markdown --> newlines   
-    newlines["🧪 STG  —  deploy-stg"]      
-    newlines["🚀 PROD  —  main"]
- 
-    newlines["♻️ Rollback  —  Release"]
+flowchart TD
+    A["🌿 feature branch"]
+    B["🛠️ DEV  —  deploy-dev"]
+    A --> B   
+    C["🧪 STG  —  deploy-stg"]      
+    D["🚀 PROD  —  main"] 
+    D["♻️ Rollback  —  Release"]
  
 
 
