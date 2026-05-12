@@ -4,27 +4,12 @@
 flowchart LR
     markdown["🌿 feature branch"]
     newlines["🛠️ DEV  —  deploy-dev"]
-    markdown --> newlines
-
-    
-     
-    
-
-    subgraph STG["🧪 STG  —  deploy-stg"]
-        stg_pr["Deployment/DevOps\nPull Request\nReview Required"]
-        stg_q["Queue workflow\nApproval Required\nRun workflow"]
-        stg_pr --> stg_q
-    end
-
-    subgraph PROD["🚀 PROD  —  main"]
-        prod_pr["Deployment/DevOps\nPull Request\nReview Required"]
-        prod_q["Queue workflow\nApproval Required\nRun workflow"]
-        prod_pr --> prod_q
-    end
-
-    subgraph RB["♻️ Rollback  —  Release"]
-        rb["Manual trigger\nSelect environment\nQueue workflow\nApproval Required\nRun workflow"]
-    end
+    markdown --> newlines   
+    newlines["🧪 STG  —  deploy-stg"]      
+    newlines["🚀 PROD  —  main"]
+ 
+    newlines["♻️ Rollback  —  Release"]
+ 
 
     FB -->|"merge PR"| DEV
     DEV -->|"merge PR"| STG
