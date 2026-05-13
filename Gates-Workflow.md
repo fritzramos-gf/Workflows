@@ -25,8 +25,8 @@ flowchart LR
     J ~~~ K["Deployment/DevOps\nPull Request\nReview Required"] 
     subgraph ROLLBACK
         F[Release]
-    F ~~~ L["Manual trigger\nSelect environment\nQueue workflow\nApproval Required\nRun workflow"]
     end
+    F ~~~ L["Manual trigger\nSelect environment\nQueue workflow\nApproval Required\nRun workflow"]
     
 
 
