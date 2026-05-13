@@ -22,7 +22,8 @@ flowchart LR
     end
     I ~~~ J["Queue workflow\nApproval Required\nRun workflow"]
     E ---> F
-    J ~~~ K["Deployment/DevOps\nPull Request\nReview Required"] 
+    J ~~~ K["Deployment/DevOps\nPull Request\nReview Required"]
+    K ~~~ F
     subgraph ROLLBACK
         F[Release]
     end
