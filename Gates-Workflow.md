@@ -26,7 +26,7 @@ flowchart LR
     subgraph ROLLBACK
         F[Release]
     end
-    E ~~~ F["Manual trigger\nSelect environment\nQueue workflow\nApproval Required\nRun workflow"]
+    L~~~ F["Manual trigger\nSelect environment\nQueue workflow\nApproval Required\nRun workflow"]
     
 
 
