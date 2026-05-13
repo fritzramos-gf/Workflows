@@ -28,7 +28,6 @@ flowchart LR
     end
     K ~~~ L["Manual trigger\nSelect environment\nQueue workflow\nApproval Required\nRun workflow"]
 
-
 ```
  
 
